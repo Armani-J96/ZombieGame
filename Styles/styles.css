@@ -38,7 +38,7 @@ font-size: 50px;
 }
 
 #image1 {
-    background: url("./images/Background1.png") repeat-x;
+    background: url("../images/Background1.png") repeat-x;
     position: absolute;
     height: 776px;
     width: 1552px;
