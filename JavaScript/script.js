@@ -1,13 +1,33 @@
 window.onload = function () {
-    const startBtn = document.getElementById("start-button");
-    const restartButton = document.getElementById("restart-button");
+    let startBtn = document.getElementById("start-button");
+    let restartButton = document.getElementById("restart-button");
+    let winRestartButton = document.getElementById("win-restart-button");
+
+   
     startBtn.addEventListener("click", function () {
-        //console.log("Button Works!")
-    startGame();})
+        
+    startGame()
+    });
+
     restartButton.addEventListener("click", function () {
-        //console.log("Button Works!")
-    startGame();
-});
+
+        let gameEndScreen = document.getElementById('game-end')
+        let gameWinScreen = document.getElementById('game-win')
+        
+        gameEndScreen.style.display = "none";
+        gameWinScreen.style.display = "none";
+        startGame()    
+    });
+
+    winRestartButton.addEventListener("click", function() {
+
+        let gameEndScreen = document.getElementById('game-end')
+        let gameWinScreen = document.getElementById('game-win')
+        
+        gameEndScreen.style.display = "none";
+        gameWinScreen.style.display = "none";
+        startGame()
+    });
 
 
     }

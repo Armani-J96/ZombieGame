@@ -93,10 +93,10 @@ font-size: 50px;
 
 #raider {
     position: absolute;
-    top: 60%;
-    left: 55%;
+    top: 61%;
+    left: 50%;
     transform: translate(-50% , -50%);
-    width: 128px;
+    width: 90px;
     height: 128px;
     background: url("/Raider\ Sprite/Run.png");
     animation: animate 0.7s steps(8) infinite;
@@ -112,8 +112,8 @@ font-size: 50px;
 
 #zombie {
     position: absolute;
-    top: 61.5%;
-    left: 49%;
+    top: 62.5%;
+    left: 39%;
     transform: translate(-50% , -50%);
     width: 96px;
     height: 96px;
@@ -131,8 +131,8 @@ font-size: 50px;
 
 #zombie1 {
     position: absolute;
-    top: 61.5%;
-    left: 50%;
+    top: 62.5%;
+    left: 40%;
     transform: translate(-50% , -50%);
     width: 96px;
     height: 96px;
@@ -150,8 +150,8 @@ font-size: 50px;
 
 #zombie2 {
     position: absolute;
-    top: 61.5%;
-    left: 47%;
+    top: 62.5%;
+    left: 37%;
     transform: translate(-50% , -50%);
     width: 96px;
     height: 96px;
@@ -164,6 +164,25 @@ font-size: 50px;
     }
     to {
         background-position: -672px;
+    }
+}
+#heli{
+    position: absolute;
+    top:63.5%;
+    left: 65%;
+    transform: translate(-50% , -50%);
+    width:266px;
+    height:92px;
+    background: url("/helicopter/heli1.png");
+    animation: fly 0.2s steps(4) infinite;
+
+}
+@keyframes fly {
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: 375px;
     }
 }
 
@@ -230,6 +249,16 @@ font-size: 50px;
       transform: translate3d(-1152px, 0, 0);
     }
   }
+  #chopa{
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    left:38%;
+  }
+  
+  h2{
+    font-size: 30px;
+  }
 
   #game-header {
     font-size: 50px;
@@ -263,4 +292,393 @@ font-size: 50px;
     0% {opacity: 0;}
     100%{opacity: 1;}
   }
+
+  #horde{
+    display:none
+  }
+
+  #zombie3 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie4 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie3/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie5 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie2/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie6 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie7 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie2/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie8 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie9 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie3/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie10 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie2/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie11 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie3/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie12 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie13 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie2/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie14 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie15 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombies/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie16 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie2/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#zombie17 {
+    position: absolute;
+    top: 61.5%;
+    left: 49%;
+    transform: translate(-50% , -50%);
+    width: 96px;
+    height: 96px;
+    background: url("/Zombie3/Run.png");
+    animation: scrollText 0.8s steps(7) infinite;
+}
+@keyframes scrollText {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+#game-win {
+    display: none;
+    overflow: hidden;
+    width: 1152px;  
+    height: 648px;
+    position: relative;
+    top: 30%;
+    left: 15%;
+    
+}
+#survived {
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    left: 33%;
+    z-index: 5;
+}
+#win-image1{
+    background: url("/images/large/1\(1\).png") repeat-x;
+    position: absolute;
+    height: 648px;
+    width: 3456px;
+    animation: move 15s linear infinite;
+    z-index: 1;
+  }
+  #win-image2{
+    background: url("/images/large/2\(1\).png") repeat-x;
+    position: absolute;
+    height: 648px;
+    width: 3456px;
+    animation: move 14s linear infinite;
+    z-index: 1;
+  }
+  #win-image3{
+    background: url("/images/large/3\(1\).png") repeat-x;
+    position: absolute;
+    height: 648px;
+    width: 3456px;
+    animation: move 14s linear infinite;
+    z-index: 1;
+  }
+  #win-image4{
+    background: url("/images/large/4\(1\).png") repeat-x;
+    position: absolute;
+    height: 648px;
+    width: 3456px;
+    animation: move 13s linear infinite;
+    z-index: 1;
+  }
+  #win-image5{
+    background: url("/images/large/5\(1\).png") repeat-x;
+    position: absolute;
+    height: 648px;
+    width: 3456px;
+    animation: move 12s linear infinite;
+    z-index: 1;
+  }
+  @keyframes move {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1152px, 0, 0);
+    }
+  }
+  #heli-win{
+    position: absolute;
+    top:50.5%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50% , -50%);
+    width:266px;
+    height:92px;
+    background: url("/helicopter/heli1.png");
+    animation: fly 0.2s steps(4) infinite;
+
+}
+@keyframes fly {
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: 375px;
+    }
+}
+#win-restart-button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 255, 8);
+    cursor:pointer;
+    text-align: center;
+    z-index: 11;
+    position: absolute;
+    top:80%;
+    left:45%;
+
+
+}
+
   

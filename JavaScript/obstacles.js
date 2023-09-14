@@ -9,7 +9,7 @@ class Obstacle {
         this.element = document.createElement("img")
         this.element.src = "obstacles/hiclipart.com (1).png";
         this.element.style.position = "absolute";
-        this.element.style.zIndex = 100;
+        this.element.style.zIndex = 5;
         this.element.style.width = `${this.width}px`;
         this.element.style.height = `${this.height}px`;
         this.element.style.left = `${this.left}px`;
@@ -24,6 +24,5 @@ class Obstacle {
 
     updatePosition() {
         this.element.style.left = `${this.left}px`;
-        //this.element.style.top = `${this.top}px`;
     }
 }

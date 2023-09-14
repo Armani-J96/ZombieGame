@@ -10,9 +10,7 @@ this.directionY = 0;
 this.y_velocity = 0;
 this.x_velocity = 0;
 this.jumping = false
-// this.gravity = 1
 this.element = document.getElementById("raider");
-/*this.element.src = imgSrc;*/
 this.element.style.zIndex = 5;
 this.element.style.position = "absolute";
 this.element.style.width = `${width}px`;
@@ -53,7 +51,7 @@ console.log("hello", this.y_velocity)
     const obstacleBoundry = obstacle.element.getBoundingClientRect();
 
 if (
-  playerChar.left < obstacleBoundry.right &&
+  playerChar.left + 50 < obstacleBoundry.right &&
   playerChar.right > obstacleBoundry.left &&
   playerChar.top < obstacleBoundry.bottom &&
   playerChar.bottom > obstacleBoundry.top
@@ -79,6 +77,24 @@ if (
   return true;
 } else {
   return false;
+}
+}
+collision3(helicopter){
+
+    const playerChar = this.element.getBoundingClientRect();
+    const helicopterBoundry = helicopter.element.getBoundingClientRect();
+
+    if (
+      playerChar.left < helicopterBoundry.right &&
+      playerChar.right > helicopterBoundry.left &&
+      playerChar.top < helicopterBoundry.bottom &&
+      playerChar.bottom > helicopterBoundry.top
+    ) {
+        
+      return true;
+    } else {
+      return false;
+  
 }
 }
 }
