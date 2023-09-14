@@ -24,7 +24,6 @@ class Game {
     this.zombie17 = new Zombie17 (this.gameScreen, 96, 96, 30, 650)
     this.zombie18 = new Zombie18 (this.gameScreen, 96, 96, 130, 650)
     this.helicopter = new Helicopter (this.gameScreen, 266, 92, 5050, 650)
-    this.music = new Music (this.gameScreen, "/music/Hitman\(chosic.com\).mp3")
     this.height = "700px";
     this.width = "1200px";
     this.obstacles = [];

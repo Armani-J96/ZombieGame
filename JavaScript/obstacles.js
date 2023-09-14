@@ -7,7 +7,7 @@ class Obstacle {
         this.width = 50;
         this.height = 60;
         this.element = document.createElement("img")
-        this.element.src = "obstacles/hiclipart.com (1).png";
+        this.element.src = "./obstacles/hiclipart.com (1).png";
         this.element.style.position = "absolute";
         this.element.style.zIndex = 5;
         this.element.style.width = `${this.width}px`;
