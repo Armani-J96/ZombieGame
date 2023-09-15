@@ -24,6 +24,9 @@ class Game {
     this.zombie17 = new Zombie17 (this.gameScreen, 96, 96, 30, 650)
     this.zombie18 = new Zombie18 (this.gameScreen, 96, 96, 130, 650)
     this.helicopter = new Helicopter (this.gameScreen, 266, 92, 5050, 650)
+    this.myAudio = document.querySelector('#audio')
+    this.myAudio2 = document.querySelector('#winAudio')
+    this.myAudio3 = document.querySelector('#loseAudio')
     this.height = "700px";
     this.width = "1200px";
     this.obstacles = [];
@@ -31,8 +34,10 @@ class Game {
     this.gameOver = false;
 
     }
-
     start(){
+        this.myAudio.play() 
+        this.myAudio2.pause()
+        this.myAudio3.pause()
         this.gameScreen.style.height = this.height;
         this.gameScreen.style.width = this.width;
         this.gameScreen.style.display = "inherit";
@@ -94,6 +99,8 @@ class Game {
     endGame() {
         // this.player.element.remove();
         this.obstacles.forEach(obstacle => obstacle.element.remove())
+        this.myAudio.pause()
+        this.myAudio3.play()
         // this.zombie1.element.remove();
         // this.zombie2.element.remove();
         // this.zombie3.element.remove();
@@ -107,6 +114,8 @@ class Game {
     winGame(){
         // this.player.element.remove();
         this.obstacles.forEach(obstacle => obstacle.element.remove())
+        this.myAudio.pause()
+        this.myAudio2.play()
         // this.zombie1.element.remove();
         // this.zombie2.element.remove();
         // this.zombie3.element.remove();
