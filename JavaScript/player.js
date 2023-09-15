@@ -51,7 +51,7 @@ console.log("hello", this.y_velocity)
     const obstacleBoundry = obstacle.element.getBoundingClientRect();
 
 if (
-  playerChar.left + 50 < obstacleBoundry.right &&
+  playerChar.left + 70 < obstacleBoundry.right &&
   playerChar.right > obstacleBoundry.left &&
   playerChar.top < obstacleBoundry.bottom &&
   playerChar.bottom > obstacleBoundry.top

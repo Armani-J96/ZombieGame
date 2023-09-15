@@ -48,7 +48,7 @@ class Game {
             return;
         }
         this.counter++
-        if (this.counter % 125 === 0) {
+        if (this.counter % 70 === 0) {
              this.obstacles.push(new Obstacle(this.gameScreen))
         }
         this.update();
